@@ -1,7 +1,9 @@
 
 
+
 from jamaibase import JamAI, types as t
-jamai = JamAI(token="YOUR PAT KEY", project_id="proj_a1a6969f4fb2c1cc2a3085f3")
+PAT: str = "jamai_pat_28cb532b9f67358c9ff8e13755832fda8a404e2bec94bf90"
+jamai = JamAI(token="", project_id="proj_23fa99cb91f349d5c0d046f5")
 import os
 import tempfile
 from typing import Dict, List, Optional
@@ -10,11 +12,11 @@ import streamlit as st
 import pandas as pd
 
 
-PAT: str = "YOUR PAT KEY"
-PROJECT_ID: str = "proj_a1a6969f4fb2c1cc2a3085f3"
+PAT: str = "jamai_pat_28cb532b9f67358c9ff8e13755832fda8a404e2bec94bf90"
+PROJECT_ID: str = "proj_23fa99cb91f349d5c0d046f5"
 
 # Action Table identifier (ID/name exactly as it appears in Jamaibase UI)
-ACTION_TABLE_NAME: str = "Receipt"
+ACTION_TABLE_NAME: str = "Receipt.s"
 
 # Column IDs (synthetic placeholders; replace with your real column IDs)
 # Input FILE column (marked Input in the Action Table)
